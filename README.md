@@ -24,7 +24,7 @@
 `sudo docker-compose up`
 
 ## (Terminal 1 - When Terminal2's docker-compose output shows ready)
-`awslocal dynamodb create-table --table-name counterTable --attribute-definitions `AttributeName=id,AttributeType=S --key-schema AttributeName=id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=10`
+`awslocal dynamodb create-table --table-name counterTable --attribute-definitions AttributeName=id,AttributeType=S --key-schema AttributeName=id,KeyType=HASH --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=10`
 
 `cd /Documents/lambda-proj`
 
