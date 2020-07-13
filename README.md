@@ -1,4 +1,3 @@
-# ally-mark-sample-project
 # Ally Mark - lambda terraform project
 
 ## Installation steps (Ubuntu)
