@@ -1,0 +1,80 @@
+
+  503  pip3 install awscli-local
+  507  cd Documents/ame apiHandler --runtime nodejs8.10 --handler lambda.apiHandler --zip-file fileb://lambdafunc.zip --role arn:aws:iam:123456
+  533  curl localhost:4586/apihandler
+  534  awslocal apigatewy create-rest-api --name apiHandler
+  535  awslocal lambda create-function --function-name apiHandler --runtime nodejs8.10 --handler lambda.apiHandler --zip-file fileb://lambdafunc.zip --role arn:aws:iam:123456
+  536  awslocal apigatewy create-rest-api --name apiHandler
+  537  awslocal apigateway cr
+  509  mkdir lambda-proj
+  510  cd lambda-proj/
+  512  touch lambda.js
+  513  subl lambda.js 
+  514  ls
+  515  zip -r -X lambdafunc.zip lambda.js 
+  528  node lambda
+  529  node lambda.js
+  531  awslocal lambda create-function --function-neate-rest-api --name apiHandler
+  538  awslocal apigateway get-resource --rest-api-id ku1h6ir3ku
+  539  awslocal apigateway get-resource --resource-id ku1h6ir3ku
+  540  awslocal apigateway get-resource --rest-api-id ku1h6ir3ku --resource-id arn:aws:lambda:us-east-1:000000000000:function:apiHandler
+  541  awslocal apigateway get-resources --rest-api-id ku1h6ir3ku
+  542  awslocal apigateway create-resource --rest-api-id ku1h6ir3ku --parent-id g9bboofuj3 --path-part "/counter"
+  543  awslocal apigateway create-resource --rest-api-id ku1h6ir3ku --parent-id g9bboofuj3 --path-part "counter"
+  544  awslocal apigateway put-method --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET
+  545  awslocal apigateway put-method --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET --authorization-type "NONE"
+  546  curl localhost:4566
+  547  curl localhost:4566/counter
+  548  curl localhost:49669/counter
+  549  curl localhost:49669/counter
+  550  curl localhost:4566/counter
+  551  awslocal apigateway put-integration --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET type AWS_PROXY --integration-http-method POST --uri arn:aws:lambda:us-east-1:000000000000:function:apiHandler --passthrough-behaviour WHEN_NO_MATCH
+  552  awslocal apigateway put-integration --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET --type AWS_PROXY --integration-http-method POST --uri arn:aws:lambda:us-east-1:000000000000:function:apiHandler --passthrough-behaviour WHEN_NO_MATCH
+  553  awslocal apigateway put-integration --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET --type AWS_PROXY --integration-http-method POST --uri arn:aws:lambda:us-east-1:000000000000:function:apiHandler --passthrough-behavior WHEN_NO_MATCH
+  554  awslocal apigateway put-integration --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET --type AWS_PROXY --integration-http-method POST --uri arn:aws:apigateway:us-east-1:lambda:000000000000:function:apiHandler/invocations --passthrough-behavior WHEN_NO_MATCH
+  555  awslocal apigateway put-integration --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET --type AWS_PROXY --integration-http-method POST --passthrough-behavior WHEN_NO_MATCH
+  556  awslocal loambda list-functions
+  557  awslocal lambda list-functions
+  558  awslocal apigateway put-integration --rest-api-id ku1h6ir3ku --resource-id kvme14gpuc --http-method GET --type AWS_PROXY --integration-http-method POST --uri arn:aws:apigateway:us-east-1:lambda:path/2020-07-09/function/arn:aws:lambda:us-east-1:000000000000:function:apiHandler --passthrough-behavior WHEN_NO_MATCH
+  559  awslocal apigateway create-deployment --rest-api-id ku1h6ir3ku --stage-name test
+  560  curl localhost:4567
+  561  curl localhost:4567/counter
+  562  curl localhost:4567/counter
+  563  curl localhost:4566/counter
+  564  curl localhost:4567
+  565  curl localhost:4567/restapis/ku1h6ir3ku/test/_user_request/counter
+  566  curl localhost:4567/restapis/ku1h6ir3ku/test/_user_request/
+  567  curl localhost:4566/restapis/ku1h6ir3ku/test/_user_request/counter
+  568  curl localhost:4569/restapis/ku1h6ir3ku/test/_user_request/counter
+  569  curl localhost:4568/restapis/ku1h6ir3ku/test/_user_request/counter
+  570  curl localhost:4567/restapis/ku1h6ir3ku/test/_user_request/counter
+  571  curl localhost:4565/restapis/ku1h6ir3ku/test/_user_request/counter
+  572  curl localhost:4566/restapis/ku1h6ir3ku/test/_user_request/counter
+  573  curl localhost:4567
+  574  unzip terraform_0.12.28_darwin_amd64.zip 
+  575  ls
+  576  echo $path
+  577  echo $PATH
+  578  mv terraform /usr/local/bin/
+  579  terraform -help
+  580  touch counter.tf
+  581  awslocal invoke --funtion-name apiHandler
+  582  awslocal lamda invoke --funtion-name apiHandler
+  583  awslocal lambda invoke --funtion-name apiHandler
+  584  awslocal lambda invoke --function-name apiHandler
+  585  awslocal lambda invoke --function-name apiHandler output
+  586  cat output 
+  587  awslocal lambda invoke --function-name apiHandler output
+  588  awslocal lambda create-function --function-name apiHandler --runtime nodejs8.10 --handler lambda.apiHandler --zip-file fileb://lambdafunc.zip --role arn:aws:iam:123456
+  589  awslocal lambda invoke --function-name apiHandler output
+  590  cat output 
+  591  awslocal lambda create-function --function-name apiHandler --runtime nodejs8.10 --handler lambda.apiHandler --zip-file fileb://lambdafunc.zip --role arn:aws:iam:123456
+  592  cat output 
+  593  rm output 
+  594  awslocal lambda invoke --function-name apiHandler output
+  595  awslocal lambda create-function --function-name apiHandler --runtime nodejs8.10 --handler lambda.apiHandler --zip-file fileb://lambdafunc.zip --role arn:aws:iam:123456
+  596  awslocal lambda invoke --function-name apiHandler output
+  597  docker
+  598  docker
+  599  sysctl kern.hv_support
+  600  history
