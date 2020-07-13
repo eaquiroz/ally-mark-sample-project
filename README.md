@@ -3,7 +3,6 @@
 ## Installation steps (Ubuntu)
 ## (Terminal 1)
 `sudo apt install docker.io`
-
 `sudo apt install docker-compose`
 
 `sudo apt install unzip`
