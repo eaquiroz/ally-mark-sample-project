@@ -3,7 +3,9 @@
 ## Installation steps (Ubuntu)
 ## (Terminal 1)
 `sudo apt install docker.io`
+
 `sudo apt install docker-compose`
+
 `sudo apt install unzip`
 `sudo apt install python-pip`
 `wget https://releases.hashicorp.com/terraform/0.12.28/terraform_0.12.28_openbsd_amd64.zip`
